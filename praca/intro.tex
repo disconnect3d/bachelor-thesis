@@ -1,0 +1,16 @@
+\chapter{Wstęp}
+\label{cha:wstep}
+
+W obecnych czasach, gdy prędkość przesyłania danych nie nadąża za częstotliwością taktowania procesora, wiele jego cykli jest marnowanych na bezczynne oczekiwanie na~dane. Biorąc pod uwagę sposób działania sprzętu, na~którym wykonywane jest dane oprogramowanie, możliwe jest napisanie programu w taki sposób, aby zminimalizować czas bezczynności procesora.
+
+
+W niniejszej pracy zbadano wpływ ułożenia danych na prędkość działania programu. Zebrano dotychczasowe badania na~ten~temat, rozpoczynając od~teorii działania współczesnych procesorów. Następnie zaprezentowano i przeanalizowano zestaw przykładów. Na końcu sformułowano wnioski, podsumowujące przedstawione metody przyspieszenia działania programu, czasem bardzo niewielkim kosztem.
+
+Opisane optymalizacje i wnioski mogą zostać wykorzystane w projektach, dla których wydajność ma~kluczowe znaczenie --~przykładowo, gdy przetwarzane są~bardzo duże ilości danych, przez co~nawet niewielkie zmiany mogą wywrzeć zauważalny wpływ na~szybkość działania. W~takiej sytuacji warto zatem rozważyć każdą możliwość optymalizacji.
+
+Jednym z~przykładów takiego oprogramowania jest ATLAS Trigger. Eksperyment ATLAS (\textit{A~Toroidal LHC ApparatuS}) to~jeden z~detektorów LHC (\textit{Large Hadron Collider}, Wielki Zderzacz Hadronów), który analizuje i~rejestruje zderzenia cząstek. W~wyniku tego powstają ogromne ilości danych, które muszą być zredukowane, zanim będą mogły zostać trwale zapisane -- ponieważ obecne oprogramowanie jest w~stanie przetworzyć tylko niewielki odsetek zdarzeń, potrzebne jest odfiltrowanie na początku tych najbardziej interesujących.
+
+Innym przykładem jest pisanie silników gier komputerowych oraz samych gier. Muszą one być w~stanie wykonywać jak najwięcej obliczeń w~jak najkrótszym czasie. Ciekawym aspektem tego przykładu są~konsole. Gry pisane na~nie są zazwyczaj lepiej zoptymalizowane, niż te~pisane na~PC, ponieważ twórcy gier mogą się skupić na~optymalizacji pod daną konfigurację sprzętu, a~nie, tak jak w~przypadku komputerów osobistych, brać pod uwagę wiele rodzajów sprzętu.
+
+Z uwagi na~specyfikę problemu, wszystkie przytoczone przykłady zostały napisane w~języku C++, gdyż języki wyższego poziomu nie dają programiście możliwości manipulowania tym, jak~dane ułożone są~w~pamięci.
+

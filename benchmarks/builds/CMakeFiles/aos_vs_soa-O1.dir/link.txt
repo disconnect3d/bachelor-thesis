@@ -1,0 +1,1 @@
+/usr/bin/c++    -O1 -std=c++11 -lpthread -pthread   CMakeFiles/aos_vs_soa-O1.dir/aos_vs_soa/aos_vs_soa.o  -o builds/aos_vs_soa-O1 -rdynamic 

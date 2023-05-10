@@ -1,0 +1,1 @@
+/usr/bin/c++    -O1 -std=c++11 -lpthread -pthread   CMakeFiles/matrix_sum-O1.dir/matrix_sum/matrix_sum.o  -o builds/matrix_sum-O1 -rdynamic 

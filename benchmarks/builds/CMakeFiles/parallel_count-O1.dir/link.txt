@@ -1,0 +1,1 @@
+/usr/bin/c++    -O1 -std=c++11 -lpthread -pthread   CMakeFiles/parallel_count-O1.dir/parallel_count/parallel_count.o  -o builds/parallel_count-O1 -rdynamic 

@@ -1,0 +1,6 @@
+Autor   Data Zgłoszenia     Opcje
+dr inż. Bartosz Mindur  2015-06-29  
+Wpływ sposobu organizacji w pamięci złożonych struktur danych na wydajność kodu wynikowego
+(Impact of memory layout organization of complicated data structures on binary code efficiency)
+Opis:
+Praca polega na zaproponowaniu i optymalizacji sposobu ułożenia struktur danych w pamięć tak aby było to możliwie najbardziej wydajne. Generalnie problem polega na szybkim dostępie (jak również modyfikacji) skomplikowanych struktur danych ale z wykorzystaniem wygodnego dla użytkownika interfejsu. Problem dotyczy wykorzystania pamięci podręcznej procesora, wpływu sposobu alokacji oraz organizacji pamięci na efektywność zarządzania danymi w aspekcie oprogramowania pracującego równolegle (wiele wątków mających potencjalnie wpływ na siebie nawzajem). Wynikiem pracy ma być zestaw testów porównawczych jak w zależności od sposobu organizacji pamięci oraz liczby działających wątków relatywnie zmienia się czas wykonania danego algorytmu.

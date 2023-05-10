@@ -1,0 +1,1 @@
+/usr/bin/c++    -O1 -std=c++11 -lpthread -pthread   CMakeFiles/compact_aos_vs_soa-O1.dir/compact_aos_vs_soa/compact_aos_vs_soa.o  -o builds/compact_aos_vs_soa-O1 -rdynamic 

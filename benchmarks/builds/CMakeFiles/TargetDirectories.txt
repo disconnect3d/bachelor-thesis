@@ -1,0 +1,7 @@
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/builds/CMakeFiles/compact_aos_vs_soa-O0.dir
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/builds/CMakeFiles/data_alignment-O0.dir
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/builds/CMakeFiles/parallel_count-O0.dir
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/builds/CMakeFiles/matrix_sum-O0.dir
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/builds/CMakeFiles/filtered_sum-O0.dir
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/builds/CMakeFiles/random_access_aos_vs_soa-O0.dir
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/builds/CMakeFiles/aos_vs_soa-O0.dir

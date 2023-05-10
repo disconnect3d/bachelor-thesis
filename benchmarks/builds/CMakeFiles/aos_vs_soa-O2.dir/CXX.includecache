@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/src/aos_vs_soa/aos_vs_soa.cpp
+algorithm
+-
+iostream
+-
+vector
+-
+../measure.h
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/src/measure.h
+
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/src/measure.h
+iostream
+-
+algorithm
+-
+array
+-
+chrono
+-
+numeric
+-
+

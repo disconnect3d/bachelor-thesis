@@ -1,0 +1,26 @@
+\chapter{Podsumowanie oraz wnioski}
+\label{cha:summary}
+
+Celem niniejszej pracy było zbadanie wpływu organizacji w pamięci złożonych struktur danych na~wydajność kodu wynikowego. Problem ten jest~nietrywialny i~powiązany zarówno ze~sprzętem, systemem operacyjnym, jak i~wersją oprogramowania czy~bibliotek. Widać to~w~niektórych testach, gdzie wyniki różnią się pomiędzy maszynami i~oprogramowaniem, na~którym były uruchamiane.
+
+Jak można było się wielokrotnie przekonać podczas omawiania przeprowadzonych testów, najbardziej efektywną optymalizacją dla algorytmów przetwarzających dane często jest wykonywanie operacji sekwencyjnie, niezależnie od faktu, czy algorytm jest zrównoleglany, czy nie.
+
+Naturalnie, wiele rzeczywistych problemów jest bardziej złożonych, niż te~przedstawione w~pracy. Mimo tego, na~podstawie przeprowadzonych testów można wysnuć kilka wniosków:
+
+\begin{itemize}
+    \item Podczas projektowania oprogramowania warto pomyśleć o~tym, aby dobrze wykorzystywać pamięć podręczną procesora. Nie marnować jej zatem na~dane, które nie są~potrzebne w~danym algorytmie, jak~zostało pokazane w~zagadnieniu tablicy struktur oraz struktury tablic.
+    
+    \item W przypadku stosowania wielowątkowości należy być świadomym efektu false sharing. Problem ten nie jest oczywisty i~trudno go~wykryć. Można go za to prosto wyeliminować, tworząc lokalne kopie zmiennych dla wątków.
+    
+    \item Jeżeli nie ma dobrego uzasadnienia dla zmiany wyrównania elementów w~pamięci, to~nie należy tego robić. Może to~prowadzić do~potrzeby pobierania większej liczby linii cache przez procesor, niż wynikałoby to~z~rozmiaru pobieranych danych. Dodatkowo, niektóre procesory nie zezwalają na~taki dostęp.
+\end{itemize}
+
+Niektóre z~testów wydajności -- przetwarzanie warunkowe, przetwarzanie równoległe, czy wyrównanie danych -- to~tylko dotknięcie pewnych problemów i~ich zasygnalizowanie. Aby uzyskać bardziej całościowy obraz, należy przeprowadzić więcej różnych testów. Możliwym kierunkiem rozwoju jest dogłębniejsze zbadanie tych przypadków.
+
+Przykładowo, można~by zbadać wydajność przetwarzania warunkowego, polegającego na~posiadaniu flagi w~obiekcie klasy. Innym możliwym rozwiązaniem tego problemu jest przechowywanie licznika informującego o~obiektach, w~których flaga jest włączona oraz sortowanie obiektów na~podstawie tego licznika.
+W~przypadku wyrównania danych, można by~przeanalizować wpływ wydajności tego efektu na~przetwarzanie równoległe. Prawdopodobnie taki zrównoleglony algorytm (operujący oczywiście na~osobnych danych), byłby wolniejszy, ze~względu na~ograniczoną liczbę jednostek wczesnego pobierania oraz faktu, że~niewyrównane dane mogą wymagać wykorzystania większej liczby linii cache.
+Ten sam efekt można by przeanalizować dla przypadku tablicy struktur oraz struktury tablic.
+
+Kolejnymi dwoma zagadnieniami, które można by poruszyć, jest wpływ różnych alokatorów na~efekt false sharingu dla różnych rozmiarów obiektów oraz kwestię wykorzystania dużej ilości pamięci przez program. Mogą wtedy występować problemy z~miejscem w~pamięci podręcznej TLB, które można zredukować, wykorzystując duże strony pamięci (ang. \textit{hugepages}).
+
+Podczas optymalizacji dowolnego algorytmu bądź oprogramowania nie należy oczywiście zapominać o~najważniejszej kwestii --~ ,,\textit{We should forget about small efficiencies, say about 97\% of the time: premature optimization is the root of all evil.}'' (ang. powinniśmy zapomnieć o~małych przyspieszeniach, powiedzmy w 97\% przypadków: przedwczesna optymalizacja jest źródłem wszelkiego zła) \cite{Knuth}. Aby~zoptymalizować aplikację, w~pierwszej kolejności należy ją~sprofilować i~starać wyeliminować się tak zwane wąskie gardła, czyli miejsca w~kodzie, które działają wolno. Nie należy ślepo optymalizować miejsc, które wydają się działać wolno. Z~drugiej strony, warto pomyśleć o~kwestii wydajności programu już na~etapie jego projektowania.

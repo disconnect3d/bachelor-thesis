@@ -1,0 +1,33 @@
+\BOOKMARK [0][-]{chapter.1}{Wstep}{}% 1
+\BOOKMARK [0][-]{chapter.2}{Teoria}{}% 2
+\BOOKMARK [1][-]{section.2.1}{Przetwarzanie potokowe \(ang. pipelining\)}{chapter.2}% 3
+\BOOKMARK [2][-]{subsection.2.1.1}{Superpotokowosc \205 zwiekszenie liczby etap\363w potok\363w}{section.2.1}% 4
+\BOOKMARK [2][-]{subsection.2.1.2}{Superskalarnosc}{section.2.1}% 5
+\BOOKMARK [2][-]{subsection.2.1.3}{Superskalarnosc i superpotokowosc}{section.2.1}% 6
+\BOOKMARK [2][-]{subsection.2.1.4}{Zaleznosci miedzy instrukcjami}{section.2.1}% 7
+\BOOKMARK [2][-]{subsection.2.1.5}{Galezie wykonania \(ang. branches\)}{section.2.1}% 8
+\BOOKMARK [1][-]{section.2.2}{Jednoczesna wielowatkowosc}{chapter.2}% 9
+\BOOKMARK [1][-]{section.2.3}{Instrukcje wektorowe \205 SIMD}{chapter.2}% 10
+\BOOKMARK [1][-]{section.2.4}{Problem dostepu do pamieci}{chapter.2}% 11
+\BOOKMARK [2][-]{subsection.2.4.1}{Hierarchia pamieci}{section.2.4}% 12
+\BOOKMARK [2][-]{subsection.2.4.2}{Pamiec podreczna procesora}{section.2.4}% 13
+\BOOKMARK [2][-]{subsection.2.4.3}{Poziomy pamieci podrecznej}{section.2.4}% 14
+\BOOKMARK [2][-]{subsection.2.4.4}{Implementacja pamieci podrecznej}{section.2.4}% 15
+\BOOKMARK [2][-]{subsection.2.4.5}{Asocjacyjnosc}{section.2.4}% 16
+\BOOKMARK [2][-]{subsection.2.4.6}{Tagi w pamieci cache}{section.2.4}% 17
+\BOOKMARK [1][-]{section.2.5}{Pamiec wirtualna}{chapter.2}% 18
+\BOOKMARK [1][-]{section.2.6}{Wczesne pobieranie}{chapter.2}% 19
+\BOOKMARK [1][-]{section.2.7}{Jezyki programowania a ulozenie danych}{chapter.2}% 20
+\BOOKMARK [1][-]{section.2.8}{Wyr\363wnanie danych}{chapter.2}% 21
+\BOOKMARK [2][-]{subsection.2.8.1}{Wyr\363wnanie danych w strukturach}{section.2.8}% 22
+\BOOKMARK [2][-]{subsection.2.8.2}{Zmiana wyr\363wnania}{section.2.8}% 23
+\BOOKMARK [0][-]{chapter.3}{Testy wydajnosci}{}% 24
+\BOOKMARK [1][-]{section.3.1}{Przejscie po macierzy}{chapter.3}% 25
+\BOOKMARK [1][-]{section.3.2}{Tablica struktur a struktura tablic}{chapter.3}% 26
+\BOOKMARK [2][-]{subsection.3.2.1}{Dostep sekwencyjny}{section.3.2}% 27
+\BOOKMARK [2][-]{subsection.3.2.2}{Dostep sekwencyjny \205 ,,kompaktowa'' struktura}{section.3.2}% 28
+\BOOKMARK [2][-]{subsection.3.2.3}{Dostep swobodny}{section.3.2}% 29
+\BOOKMARK [1][-]{section.3.3}{Przetwarzanie warunkowe}{chapter.3}% 30
+\BOOKMARK [1][-]{section.3.4}{Przetwarzanie r\363wnolegle}{chapter.3}% 31
+\BOOKMARK [1][-]{section.3.5}{Wyr\363wnanie danych}{chapter.3}% 32
+\BOOKMARK [0][-]{chapter.4}{Podsumowanie oraz wnioski}{}% 33

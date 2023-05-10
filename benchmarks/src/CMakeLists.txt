@@ -1,0 +1,23 @@
+cmake_minimum_required(VERSION 2.5)
+project(Benchmarks)
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${USER_OPT_FLAG} -std=c++11 -lpthread -pthread")# -fpie -pie")
+
+MACRO(SUBDIRLIST result curdir)
+    FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)
+    SET(dirlist "")
+    FOREACH(child ${children})
+        IF(IS_DIRECTORY ${curdir}/${child})
+            LIST(APPEND dirlist ${child})
+        ENDIF()
+    ENDFOREACH()
+    SET(${result} ${dirlist})
+ENDMACRO()
+
+SUBDIRLIST(SUBDIRS ${CMAKE_CURRENT_LIST_DIR})
+SET(EXECUTABLE_OUTPUT_PATH builds)
+FOREACH(subdir ${SUBDIRS})
+    if (EXISTS ${CMAKE_CURRENT_LIST_DIR}/${subdir}/${subdir}.cpp)
+        add_executable(${subdir}${USER_OPT_FLAG} ${subdir}/${subdir}.cpp)
+    endif()
+ENDFOREACH()

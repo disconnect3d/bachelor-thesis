@@ -1,0 +1,1 @@
+/usr/bin/c++    -O1 -std=c++11 -lpthread -pthread   CMakeFiles/data_alignment-O1.dir/data_alignment/data_alignment.o  -o builds/data_alignment-O1 -rdynamic 

@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/src/measure.h
+iostream
+-
+algorithm
+-
+array
+-
+chrono
+-
+numeric
+-
+
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/src/parallel_count/parallel_count.cpp
+iostream
+-
+random
+-
+thread
+-
+vector
+-
+../measure.h
+/media/dc/B2B200EFB200B9BD/inz/benchmarks/src/measure.h
+

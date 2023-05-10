@@ -1,0 +1,1 @@
+/usr/bin/c++    -O1 -std=c++11 -lpthread -pthread   CMakeFiles/random_access_aos_vs_soa-O1.dir/random_access_aos_vs_soa/random_access_aos_vs_soa.o  -o builds/random_access_aos_vs_soa-O1 -rdynamic 
